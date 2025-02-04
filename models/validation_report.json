@@ -1,0 +1,26 @@
+{
+  "Gold": {
+    "total_in_range": "True",
+    "total_predicted": 339.99999999999994,
+    "mean_uncertainty": 0.021835000494459442,
+    "max_uncertainty": 0.22454162770226962,
+    "uncertainty_ratio": 0.005844073661752381,
+    "historical_comparison": {
+      "2016": 306.0,
+      "2020": 340.0,
+      "2024": 328.0
+    }
+  },
+  "Total": {
+    "total_in_range": "False",
+    "total_predicted": 1080.0000000000002,
+    "mean_uncertainty": 0.047711819415811665,
+    "max_uncertainty": 0.4630826531831669,
+    "uncertainty_ratio": 0.004020162561887834,
+    "historical_comparison": {
+      "2016": 972.0,
+      "2020": 1080.0,
+      "2024": 1039.0
+    }
+  }
+}

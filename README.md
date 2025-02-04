@@ -1,54 +1,40 @@
-# MCM
-
-架构设计
-
 ```
 olympic_analysis/
 │
-├── data/                      # 数据文件夹
-│   ├── raw/                  # 原始CSV文件
-│   │   ├── data_dictionary.csv   
-│   │   ├── summerOly_athletes.csv   
-│   │   ├── summerOly_hosts.csv   
-│   │   ├── summerOly_medal_counts.csv  
-│   │   └── summerOly_programs.csv  
-│   └── processed/            # 处理后的数据
+├── data/                      # 原始数据和处理后的数据
+│   ├── raw/                  # 原始数据文件
+│   └── processed/            # 处理后的数据文件
 │
 ├── src/                      # 源代码
-│   ├── __init__.py
-│   ├── config.py            # 配置文件
 │   ├── data/
 │   │   ├── __init__.py
-│   │   ├── loader.py       # 数据加载
-│   │   └── preprocessor.py  # 数据预处理
+│   │   ├── data_loader.py   # 数据加载类
+│   │   └── preprocessor.py  # 数据预处理类
 │   │
-│   ├── analysis/
-│   │   └── explorer.py  # 数据分析
 │   ├── features/
 │   │   ├── __init__.py
-│   │   ├── builders.py     # 特征构建
-│   │   └── selector.py     # 特征选择
+│   │   └── feature_engineer.py  # 特征工程
 │   │
 │   ├── models/
 │   │   ├── __init__.py
-│   │   ├── base.py        # 基础模型类
-│   │   ├── time_series.py # 时间序列模型
-│   │   ├── ml_models.py   # 机器学习模型
-│   │   ├── predictor.py   
-│   │   └── ensemble.py    # 模型集成
+│   │   ├── base_models.py   # 基础模型
+│   │   ├── ensemble.py      # 集成策略
+│   │   └── optimizer.py     # 模型优化
 │   │
-│   └── utils/
+│   ├── visualization/
+│   │   ├── __init__.py
+│   │   └── plotter.py       # 可视化工具
+│   │
+│   └── solutions/           # 针对每个问题的解决方案
 │       ├── __init__.py
-│       ├── metrics.py     # 评估指标
-│       ├── logger.py   
-│       └── visualization.py# 可视化工具
+│       ├── question1.py
+│       ├── question2.py
+│       └── question3.py
 │
-├── notebooks/               # Jupyter notebooks
-│   ├── 1.0-data-exploration.ipynb
-│   ├── 2.0-feature-engineering.ipynb
-│   └── 3.0-modeling.ipynb
+├── notebooks/               # Jupyter notebooks做探索性分析
 │
 ├── tests/                  # 单元测试
-├── requirements.txt        # 依赖包
+│
+├── requirements.txt        # 项目依赖
 └── main.py                # 主运行文件
 ```
