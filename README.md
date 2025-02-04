@@ -1,5 +1,5 @@
 # **2025MCM-C题作答代码部分**
-
+```
 olympic_analysis/
 │
 ├── data/                      # 原始数据和处理后的数据
@@ -38,10 +38,11 @@ olympic_analysis/
 │
 ├── requirements.txt        # 项目依赖
 └── main.py                # 主运行文件
+```
+## essay.pdf为我们的论文部分
 
-## essay.pdf为我们的论文部分，
-<iframe src="essay.pdf" width="100%" height="500px">
-</iframe>
+<embed src="essay.pdf" type="application/pdf" width="600" height="400">
+
 
 [View PDF](/essay.pdf)
 
